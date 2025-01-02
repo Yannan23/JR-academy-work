@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="Registration form" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <div class="basic-info">
+            <div class="dot"></div>
+            <p>Your basic info</p>
+        </div>
+        <form action="">
+            <div class="box first-name">
+                <label for="first-name">First name</label>
+                <input class="textInput" type="text" id="first-name" />
+            </div>
+            <div class="box last-name">
+                <label for="last-name">Last name</label>
+                <input class="textInput" type="text" id="last-name" />
+            </div>
+            <div class="box email">
+                <label for="email">Email address</label>
+                <input class="textInput" type="text" id="email" />
+            </div>
+            <div class="box password">
+                <label for="password">Password</label>
+                <input class="textInput" type="password" id="password" />
+            </div>
+            <div class="box password">
+                <label for="confirm-password">Confirm password</label>
+                <input class="textInput" type="password" id="confirm-password" />
+            </div>
+            <div class="basic-info">
+                <div class="dot"></div>
+                <p>Other details</p>
+            </div>
+            <div class="box date-of-birth">
+                <label for="date-of-birth">Date of birth</label>
+                <input class="textInput" type="date" id="date-of-birth" />
+            </div>
+            <div class="box">
+                <label for="gender">Gender:</label>
+                <div class="gender">
+                    <div class="genderDetails">
+                        <input type="radio" id="male" name="gender" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="genderDetails">
+                        <input type="radio" id="female" name="gender" />
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="genderDetails">
+                        <input type="radio" id="other" name="gender" />
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="box about-me">
+                <label for="about-me">About me</label>
+                <input class="textarea" type="textarea" id="about-me" />
+            </div>
+            <div class="box profession">
+                <label for="profession">Profession</label>
+                <select class="textInput" name="profession" id="profession">
+                    <option value="">Select a profession</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <fieldset>
+                <div>
+                    <input type="checkbox" id="terms" />
+                    <label for="terms">I'm accepting Terms and Conditions</label>
+                </div>
+                <button>Sign Up</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
